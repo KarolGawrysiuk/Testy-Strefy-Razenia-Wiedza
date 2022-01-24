@@ -1,0 +1,12 @@
+{
+    "email": "test235@test.pl",
+    "name": "Karol",
+    "surname": "Gawrysiuk",
+    "password": "TestPassword1!",
+    "confirmPassword": "TestPassword1!",
+    "studiesTypeId": "Stacjonarne",
+    "studiesLevelId": "Magisterskie",
+    "semesterId" : 2,
+    "fieldOfStudyIds" : "Informatyka"
+
+}
