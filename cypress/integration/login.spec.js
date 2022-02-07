@@ -16,8 +16,8 @@ describe('login', function () {
         cy.fixture('/incorrect.data.json').then(data => {
             cy.Login(data);
             cy.get('.validation-summary-errors > ul').should('be.visible')
-            .contains('Invalid login attempt.');
-            //.contains('Nieprawidłowa próba logowania.');
+            //.contains('Invalid login attempt.');
+            .contains('Nieprawidłowa próba logowania.');
         })
     });
 

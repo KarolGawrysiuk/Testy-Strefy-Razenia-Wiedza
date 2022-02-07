@@ -4,6 +4,4 @@ Cypress.Commands.add('Login', data => {
         cy.get('#Password').type(data.password);
         cy.get('#RememberMe').check();
         cy.get('.btn').click();
-
-    
 });

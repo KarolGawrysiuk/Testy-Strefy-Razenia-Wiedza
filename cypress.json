@@ -1,3 +1,5 @@
 {
-    "baseUrl": "https://strefarawie.azurewebsites.net/"
+    "baseUrl": "https://strefarawie.azurewebsites.net/",
+    "viewportWidth": 1600,
+    "viewportHeight": 960
 }
