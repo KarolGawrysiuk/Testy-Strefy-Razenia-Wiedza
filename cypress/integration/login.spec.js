@@ -7,7 +7,7 @@ describe('login', function () {
     })
 
     it('Login', function () {
-        cy.fixture('/login.json').then(data => {
+        cy.fixture('/loginStud.json').then(data => {
             cy.Login(data);
         });
     });
