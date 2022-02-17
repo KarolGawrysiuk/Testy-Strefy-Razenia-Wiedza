@@ -10,13 +10,19 @@ describe('CourseType', function () {
     });
 
     it('CreateCourse', function () {
-        cy.fixture('/addCourseType.json').then(data => {
+        cy.fixture('/addCourse.json').then(data => {
             cy.visit('Course');
             cy.get('.pull-left > .btn').click();
-            // cy.get('#Name').type(data.name);
-            // cy.get('#FieldOfStudyId').type(data.fieldOfStudies);
-            // cy.get('#SemestrNumber').type(data.semestr);
-            //cy.get('.col-md-offset-2 > .btn').click();
+            cy.get('#CourseTypeId').select(data.typeCourse);
+            cy.get('#Year').select(data.year);
+            cy.get('#StudiesTypeId').select(data.studiesTypeId);
+            cy.get('#StudiesLevelId').select(data.studiesLevelId);
+            cy.get('#SemesterNumber').select(data.semesterNumber);
+            cy.get('#MaxPoints').clear().type(data.maxPoints);
+            cy.get('#Description').type(data.description);
+            cy.contains('Zapisz').click();
+
+            cy.get('.body-content').contains('Rozproszone bazy danych (stacjonarne | Informatyka)').should('be.visible');
         });
 
     });
