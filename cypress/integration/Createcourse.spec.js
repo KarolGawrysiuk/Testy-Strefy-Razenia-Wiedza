@@ -1,4 +1,4 @@
-describe('CourseType', function () {
+describe('CreateCourse', function () {
     beforeEach(function () {
         cy.clearCookies();
         cy.clearLocalStorage();
