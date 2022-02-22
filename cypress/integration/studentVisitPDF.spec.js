@@ -13,7 +13,7 @@ describe('studentVisitPDF', function () {
 
     it('VisitPDF', function () {
 
-        cy.visit('MyCourses');
+        cy.visit('Course');
         cy.contains('Technologie Programistyczne Systemy Internetowe').should('be.visible').click();
         cy.fixture('/laboratories.json').then(data => {
 
